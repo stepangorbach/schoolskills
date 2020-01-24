@@ -96,7 +96,7 @@ header{
 
 /*-------------------main content-------------------*/
 main{
-    background: url(assets/marker.jpg) no-repeat;
+    background: url(assets/marker.png) no-repeat;
     background-size: contain;
 }
 
