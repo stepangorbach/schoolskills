@@ -991,6 +991,8 @@ footer{
     }
 
     .register_grid{
+        width: 90%;
+        margin: 0 auto;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
