@@ -243,21 +243,32 @@ main{
 .download-block{
     margin: 15px 0;
     width: 100%;
+    background-color: #ffffff;
+    border-radius: 4px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.download-block-content{
+    width: 92.5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff;
-    border-radius: 4px;
 }
 
 .download-block-title{
-    margin-left: 20px;
+    /*margin-left: 20px;*/
     font-size: 22px;
     font-weight: 300;
 }
 
 .download-block-title:last-child{
     margin-left: 0;
+}
+
+.download-block-icon{
+    margin: 14px 36px 7px 0;
+    width: 38px;
 }
 
 .download-title{
@@ -284,10 +295,7 @@ main{
     border-radius: 3px;
 }
 
-.download-block-icon{
-    margin: 14px 20px;
-    width: 38px;
-}
+
 
 .download-icon{
     transition: .75s;
@@ -544,7 +552,7 @@ main{
     transition: 1s;
     font-size: 18px;
     text-decoration: none;
-    color: black;
+    color: #005da9;
     animation:  register-button-unhover 1s ease;
     animation-fill-mode: forwards;
 }
@@ -552,7 +560,7 @@ main{
 @keyframes register-button-hover {
     0%{
         background: white;
-        color: black;
+        color: #005da9;
     }
 
     30%{
@@ -572,12 +580,12 @@ main{
     }
 
     30%{
-        color: black;
+        color: #005da9;
     }
 
     100%{
         background: white;
-        color: black;
+        color: #005da9;
     }
 }
 
