@@ -385,7 +385,7 @@ main{
 }
 
 .grid_module:nth-child(1):hover, .grid_module_2:nth-child(1):hover{
-    background-color: #6f00ff;
+    background-color: #ffdb21;
     transition: 1s;
 }
 
@@ -457,12 +457,135 @@ main{
 }
 
 .grid_module_2:nth-child(7):hover{
+    background-color: #ff6600;
+    transition: 1s;
+}
+
+.grid_module_2:nth-child(8){
+    line-height: 1.5em;
+}
+
+.grid_module_2:nth-child(8):hover{
     background-color: #1ae0bf;
     transition: 1s;
 }
 /*-------------------Downloads-------------------*/
 
+/*-------------------Contacts-------------------*/
+.contacts{
+    margin: 90px 0 0 0;
+}
 
+
+.contacts-content{
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.contacts-title{
+    margin: 0 auto;
+    padding: 50px 0;
+    background: url(assets/achivements.png);
+    background-size: cover;
+    text-align: center;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.contacts-title h2{
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.contacts-body{
+    background-color: #ffffff;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.contacts-text{
+    padding: 45px 0 24px 0;
+    width: 85%;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.contacts-text:last-child{
+    padding: 0 0 45px 0;
+}
+
+.map{
+    width: 100%;
+    padding: 0 0 24px 0;
+    margin: 0;
+}
+
+.contacts-body img{
+    width: 100%;
+}
+
+.register_grid{
+    margin-top: 15px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.register_grid a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding: 18px 10px;
+    border-radius: 3px;
+    transition: 1s;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    animation:  register-button-unhover 1s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes register-button-hover {
+    0%{
+        background: white;
+        color: black;
+    }
+
+    30%{
+        color: white;
+    }
+
+    100%{
+        background: #008cff;
+        color: white;
+    }
+}
+
+@keyframes register-button-unhover {
+    0%{
+        background: #008cff;
+        color: white;
+    }
+
+    30%{
+        color: black;
+    }
+
+    100%{
+        background: white;
+        color: black;
+    }
+}
+
+.register_grid a:hover {
+    animation:  register-button-hover 1s ease;
+    animation-fill-mode: forwards;
+}
+/*-------------------Contacts-------------------*/
 
 /*-------------------google form-------------------*/
 .google-form{
@@ -670,7 +793,7 @@ footer{
     }
 
     .about-us-body-content{
-        padding: 320x 0;
+        padding: 320px 0;
         font-size: 16px;
         width: 85%;
     }
@@ -804,7 +927,7 @@ footer{
     }
 
     .about-us-body-content{
-        padding: 320x 0;
+        padding: 320px 0;
         font-size: 16px;
         width: 85%;
     }
