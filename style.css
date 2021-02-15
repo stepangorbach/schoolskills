@@ -935,8 +935,8 @@ footer{
     }
 
     .about-us-body-content{
-        padding: 320px 0;
-        font-size: 16px;
+        padding: 32px 0;
+        font-size: 20px;
         width: 85%;
     }
 
@@ -953,7 +953,7 @@ footer{
     }
 
     .achivements-text{
-        font-size: 16px;
+        font-size: 20px;
         padding: 30px 0;
         margin: 0 32px;
     }
@@ -975,15 +975,33 @@ footer{
     }
 
     .download-block-text{
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .download-block-title{
-        font-size:  16px;
+        font-size:  20px;
     }
 
     .download-title, .download-title-2{
         font-size: 24px;
+    }
+
+    .contacts-title h2{
+        font-size: 32px;
+    }
+
+    .register_grid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .register_grid a:first-child{
+        grid-column: 1/-1;
+        grid-row: 2;
+    }
+
+    .register_grid a{
+        font-size: 14px;
     }
 
     .comp_grid{
@@ -1000,7 +1018,7 @@ footer{
 
     .module_bottom{
         height: 3.75em;
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .vk_playlist{
