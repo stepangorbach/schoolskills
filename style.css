@@ -991,8 +991,9 @@ footer{
     }
 
     .register_grid{
-        width: 95%;
-        padding-top: 16px;
+        width: 96%;
+        grid-gap: 8px;
+        padding-top: 8px;
         margin: 0 auto;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
