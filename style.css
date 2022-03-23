@@ -187,6 +187,15 @@ main {
     width: 100%;
 }
 
+.spoiler_body{
+    display: none;
+}
+
+.achivements-text a{
+    text-decoration: none;
+    color: #004cb0;
+}
+
 /*-------------------Achivements-------------------*/
 
 
@@ -308,8 +317,8 @@ main {
 .comp_grid {
     margin-top: 15px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-gap: 15px;
 }
 
@@ -354,7 +363,7 @@ main {
     padding: 0 0 16px 0;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
+    font-size: 18px;
     border-radius: 0 0 3px 3px;
 }
 
@@ -392,12 +401,12 @@ main {
     transition: .5s;
 }
 
-.grid_module:nth-child(1):hover, .grid_module_2:nth-child(1):hover {
+.grid_module:nth-child(1):hover{
     background-color: #ffdb21;
     transition: 1s;
 }
 
-.grid_module:nth-child(2):hover, .grid_module_2:nth-child(2):hover {
+.grid_module:nth-child(2):hover, .grid_module_2:nth-child(1):hover{
     background-color: #e01a1a;
     transition: 1s;
 }
@@ -417,13 +426,13 @@ main {
     line-height: 1.5em;
 }
 
-.grid_module:nth-child(5):hover, .grid_module_2:nth-child(5):hover {
+.grid_module:nth-child(5):hover, .grid_module_2:nth-child(3):hover {
     background-color: #0fb800;
     transition: 1s;
 }
 
 .grid_module:nth-child(6):hover {
-    background-color: #0fb800;
+    background-color: #0068f1;
     transition: 1s;
 }
 
@@ -437,13 +446,31 @@ main {
     line-height: 1.5em;
 }
 
-.grid_module_2:nth-child(3):hover{
+.grid_module_2:nth-child(2):hover{
     background: #004cb0;
     transition: 1s;
 }
 
-.grid_module:nth-child(8):hover, .grid_module_2:nth-child(4):hover{
+.grid_module:nth-child(8):hover{
     background-color: #008cff;
+    transition: 1s;
+}
+
+.grid_module_2:nth-child(4) {
+    line-height: 1.5em;
+}
+
+.grid_module_2:nth-child(4):hover {
+    background-color: #ff6600;
+    transition: 1s;
+}
+
+.grid_module_2:nth-child(5) {
+    line-height: 1.5em;
+}
+
+.grid_module_2:nth-child(5):hover {
+    background-color: #43a53a;
     transition: 1s;
 }
 
@@ -461,24 +488,6 @@ main {
 }
 
 .grid_module_2:nth-child(7):hover {
-    background-color: #43a53a;
-    transition: 1s;
-}
-
-.grid_module_2:nth-child(8) {
-    line-height: 1.5em;
-}
-
-.grid_module_2:nth-child(8):hover {
-    background-color: #ff6600;
-    transition: 1s;
-}
-
-.grid_module_2:nth-child(9) {
-    line-height: 1.5em;
-}
-
-.grid_module_2:nth-child(9):hover {
     background-color: #1ae0bf;
     transition: 1s;
 }
@@ -544,7 +553,7 @@ main {
     margin-top: 15px;
     margin-bottom: 60px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 15px;
 }
 
@@ -1005,8 +1014,8 @@ footer {
         grid-gap: 8px;
         padding-top: 8px;
         margin: 0 auto;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        /*grid-template-columns: 1fr 1fr;*/
+        /*grid-template-rows: 1fr 1fr;*/
     }
 
     .register_grid a:first-child {
